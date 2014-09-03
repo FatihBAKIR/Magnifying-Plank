@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Plank.Items.ApplicationDockItemProvider &ndash; plank &ndash; Vala Binding Reference</title>
+    <link href="devhelpstyle.css" rel="stylesheet" type="text/css"/><script src="scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Plank.Items.ApplicationDockItemProvider &ndash; plank Reference Manual</div>
+    <div class="site_body">
+      <div class="site_content">
+        <h1 class="main_title">ApplicationDockItemProvider</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        
+        <img class="main_diagram" usemap="#Plank.Items.ApplicationDockItemProvider" alt="Object hierarchy for ApplicationDockItemProvider" src="img/Plank.Items.ApplicationDockItemProvider.png"/>
+      
+
+      <map id="Plank.Items.ApplicationDockItemProvider" name="Plank.Items.ApplicationDockItemProvider">
+<area shape="rect" id="node1" href="Plank.Items.ApplicationDockItemProvider.html" title="Plank.Items.ApplicationDockItemProvider" alt="" coords="4,293,336,341"/>
+<area shape="rect" id="node2" href="Plank.Items.DockItemProvider.html" title="Plank.Items.DockItemProvider" alt="" coords="47,197,293,245"/>
+<area shape="rect" id="node3" href="Plank.Items.DockElement.html" title="Plank.Items.DockElement" alt="" coords="63,101,277,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">class</span> <b><span css="class">ApplicationDockItemProvider</span></b> : <span class="main_type"><a href="Plank.Items.DockItemProvider.html" class="class">DockItemProvider</a></span>
+        </div>
+        <div class="description">
+          <p>A container and controller class for managing application dock items on a dock.</p>
+        </div>
+        <div class="box">
+          <div class="headline">
+            <div class="text">All known sub-classes:</div>
+            <div class="toggle">
+              <img onclick="toggle_box  (this, 'box-content-31')" src="coll_open.png">&nbsp;</div>
+            </div>
+            <div class="content" id="box-content-31">
+              <div class="column">
+                <ul class="navi_inline">
+                  <li class="class"><a href="Plank.Items.DefaultApplicationDockItemProvider.html">DefaultApplicationDockItemProvider</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="navi_inline">
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="navi_inline">
+                </ul>
+              </div>
+            </div>
+          </div><br/>
+          <div class="namespace_note"><b>Namespace:</b> <a href="Plank.Items.html">Plank.Items</a>
+          </div>
+          <div class="package_note"><b>Package:</b> <a href="index.htm">plank</a>
+          </div>
+          <h2 class="main_title">Content:</h2>
+          <h3 class="main_title">Properties:</h3>
+          <ul class="navi_inline">
+            <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>File</code></span> <b><a href="Plank.Items.ApplicationDockItemProvider.LaunchersDir.html" class="property">LaunchersDir</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>bool</code></span> <b><a href="Plank.Items.ApplicationDockItemProvider.HandlesTransients.html" class="property">HandlesTransients</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+          </ul>
+          <h3 class="main_title">Static methods:</h3>
+          <ul class="navi_inline">
+            <li class="static_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">static</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.acquire_unity_dbus.html" class="static_method">acquire_unity_dbus</a></b> ()
+              </span>
+              <div class="leaf_brief_description"><span class="brief_description">Connect DBus connection and try to aquire unity busname</span>
+              </div></li>
+            <li class="static_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">static</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.release_unity_dbus.html" class="static_method">release_unity_dbus</a></b> ()
+              </span>
+              <div class="leaf_brief_description"><span class="brief_description">Disconnect DBus connection and release unity busname</span>
+              </div></li>
+          </ul>
+          <h3 class="main_title">Creation methods:</h3>
+          <ul class="navi_inline">
+            <li class="creation_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Plank.Items.ApplicationDockItemProvider.ApplicationDockItemProvider.html" class="creation_method">ApplicationDockItemProvider</a></b> (<span class="main_type"><code>File</code></span> launchers_dir)
+              </span>
+              <div class="leaf_brief_description"><span class="brief_description">Creates a new container for dock items.</span>
+              </div></li>
+          </ul>
+          <h3 class="main_title">Methods:</h3>
+          <ul class="navi_inline">
+            <li class="method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_type"><a href="Plank.Items.ApplicationDockItem.html" class="class">ApplicationDockItem</a></span>? <b><a href="Plank.Items.ApplicationDockItemProvider.item_for_application.html" class="method">item_for_application</a></b> (<span class="main_type"><code>Application</code></span> app)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">override</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.add_item_with_uri.html" class="virtual_method">add_item_with_uri</a></b> (<span class="main_basic_type"><code>string</code></span> uri, <span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span>? target = <span class="main_optional_parameter">null</span>)
+              </span>
+              <div class="leaf_brief_description"><span class="brief_description">Adds a dock item with the given URI to the collection.</span>
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">virtual</span> <span class="main_type"><code>ArrayList</code></span>&lt;<span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span>&gt; <b><a href="Plank.Items.ApplicationDockItemProvider.load_items.html" class="virtual_method">load_items</a></b> ()
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">virtual</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.add_running_apps.html" class="virtual_method">add_running_apps</a></b> ()
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">virtual</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.app_opened.html" class="virtual_method">app_opened</a></b> (<span class="main_type"><code>Application</code></span> app)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.delay_items_monitor.html" class="method">delay_items_monitor</a></b> ()
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.resume_items_monitor.html" class="method">resume_items_monitor</a></b> ()
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">override</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.item_signals_connect.html" class="virtual_method">item_signals_connect</a></b> (<span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span> item)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">override</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.item_signals_disconnect.html" class="virtual_method">item_signals_disconnect</a></b> (<span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span> item)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">protected</span> <span class="main_keyword">override</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.handle_item_deleted.html" class="virtual_method">handle_item_deleted</a></b> (<span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span> item)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">override</span> <span class="main_basic_type"><code>bool</code></span> <b><a href="Plank.Items.ApplicationDockItemProvider.can_accept_drop.html" class="virtual_method">can_accept_drop</a></b> (<span class="main_type"><code>ArrayList</code></span>&lt;<span class="main_basic_type"><code>string</code></span>&gt; uris)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+            <li class="virtual_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">override</span> <span class="main_basic_type"><code>bool</code></span> <b><a href="Plank.Items.ApplicationDockItemProvider.accept_drop.html" class="virtual_method">accept_drop</a></b> (<span class="main_type"><code>ArrayList</code></span>&lt;<span class="main_basic_type"><code>string</code></span>&gt; uris)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+          </ul>
+          <h3 class="main_title">Signals:</h3>
+          <ul class="navi_inline">
+            <li class="signal"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">signal</span> <span class="main_keyword">void</span> <b><a href="Plank.Items.ApplicationDockItemProvider.item_window_added.html" class="signal">item_window_added</a></b> (<span class="main_type"><a href="Plank.Items.ApplicationDockItem.html" class="class">ApplicationDockItem</a></span> item)
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+          </ul>
+          <h3 class="main_title">Inherited Members:</h3>
+          <div class="box">
+            <div class="headline">
+              <div class="text">All known members inherited from class Plank.Items.DockItemProvider</div>
+              <div class="toggle">
+                <img onclick="toggle_box  (this, 'box-content-32')" src="coll_open.png">&nbsp;</div>
+              </div>
+              <div class="content" id="box-content-32">
+                <div class="column">
+                  <ul class="navi_inline">
+                    <li class="property"><a href="Plank.Items.DockItemProvider.Items.html">Items</a></li>
+                    <li class="method"><a href="Plank.Items.DockItemProvider.add_item.html">add_item</a></li>
+                    <li class="method"><a href="Plank.Items.DockItemProvider.remove_item.html">remove_item</a></li>
+                    <li class="method"><a href="Plank.Items.DockItemProvider.handle_item_state_changed.html">handle_item_state_changed</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.update_visible_items.html">update_visible_items</a></li>
+                    <li class="method"><a href="Plank.Items.DockItemProvider.handle_setting_changed.html">handle_setting_changed</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.move_item_to.html">move_item_to</a></li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <ul class="navi_inline">
+                    <li class="method"><a href="Plank.Items.DockItemProvider.reset_item_buffers.html">reset_item_buffers</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.item_exists_for_uri.html">item_exists_for_uri</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.add_item_with_uri.html">add_item_with_uri</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.add_item_without_signaling.html">add_item_without_signaling</a>
+                    </li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.replace_item.html">replace_item</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.remove_item_without_signaling.html">remove_item_without_signaling
+                      </a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.item_signals_connect.html">item_signals_connect</a></li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <ul class="navi_inline">
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.item_signals_disconnect.html">item_signals_disconnect</a></li>
+                    <li class="virtual_method"><a href="Plank.Items.DockItemProvider.handle_item_deleted.html">handle_item_deleted</a></li>
+                    <li class="signal"><a href="Plank.Items.DockItemProvider.items_changed.html">items_changed</a></li>
+                    <li class="signal"><a href="Plank.Items.DockItemProvider.item_state_changed.html">item_state_changed</a></li>
+                    <li class="signal"><a href="Plank.Items.DockItemProvider.item_positions_changed.html">item_positions_changed</a></li>
+                    <li class="field"><a href="Plank.Items.DockItemProvider.visible_items.html">visible_items</a></li>
+                    <li class="field"><a href="Plank.Items.DockItemProvider.internal_items.html">internal_items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="headline">
+                <div class="text">All known members inherited from class Plank.Items.DockElement</div>
+                <div class="toggle">
+                  <img onclick="toggle_box  (this, 'box-content-33')" src="coll_open.png">&nbsp;</div>
+                </div>
+                <div class="content" id="box-content-33">
+                  <div class="column">
+                    <ul class="navi_inline">
+                      <li class="property"><a href="Plank.Items.DockElement.Text.html">Text</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.IsVisible.html">IsVisible</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.Button.html">Button</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.ClickedAnimation.html">ClickedAnimation</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.HoveredAnimation.html">HoveredAnimation</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.ScrolledAnimation.html">ScrolledAnimation</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.AddTime.html">AddTime</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.RemoveTime.html">RemoveTime</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.LastClicked.html">LastClicked</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.LastHovered.html">LastHovered</a></li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <ul class="navi_inline">
+                      <li class="property"><a href="Plank.Items.DockElement.LastScrolled.html">LastScrolled</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.LastUrgent.html">LastUrgent</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.LastActive.html">LastActive</a></li>
+                      <li class="property"><a href="Plank.Items.DockElement.LastMove.html">LastMove</a></li>
+                      <li class="static_method"><a href="Plank.Items.DockElement.create_menu_item.html">create_menu_item</a></li>
+                      <li class="static_method"><a href="Plank.Items.DockElement.create_menu_item_with_pixbuf.html">create_menu_item_with_pixbuf</a>
+                      </li>
+                      <li class="method"><a href="Plank.Items.DockElement.clicked.html">clicked</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.on_clicked.html">on_clicked</a></li>
+                      <li class="method"><a href="Plank.Items.DockElement.hovered.html">hovered</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.on_hovered.html">on_hovered</a></li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <ul class="navi_inline">
+                      <li class="method"><a href="Plank.Items.DockElement.scrolled.html">scrolled</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.on_scrolled.html">on_scrolled</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.get_menu_items.html">get_menu_items</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.can_be_removed.html">can_be_removed</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.can_accept_drop.html">can_accept_drop</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.accept_drop.html">accept_drop</a></li>
+                      <li class="virtual_method"><a href="Plank.Items.DockElement.unique_id.html">unique_id</a></li>
+                      <li class="method"><a href="Plank.Items.DockElement.as_uri.html">as_uri</a></li>
+                      <li class="signal"><a href="Plank.Items.DockElement.needs_redraw.html">needs_redraw</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="headline">
+                  <div class="text">All known members inherited from class GLib.Object</div>
+                  <div class="toggle">
+                    <img onclick="toggle_box  (this, 'box-content-34')" src="coll_open.png">&nbsp;</div>
+                  </div>
+                  <div class="content" id="box-content-34">
+                    <div class="column">
+                      <ul class="navi_inline">
+                        <li class="static_method">@new</li>
+                        <li class="static_method">newv</li>
+                        <li class="static_method">new_valist</li>
+                        <li class="method">get_type</li>
+                        <li class="method">get_class</li>
+                        <li class="method">@ref</li>
+                        <li class="method">unref</li>
+                        <li class="method">ref_sink</li>
+                        <li class="method">weak_ref</li>
+                        <li class="method">weak_unref</li>
+                        <li class="method">add_weak_pointer</li>
+                        <li class="method">remove_weak_pointer</li>
+                      </ul>
+                    </div>
+                    <div class="column">
+                      <ul class="navi_inline">
+                        <li class="method">@get</li>
+                        <li class="method">@set</li>
+                        <li class="method">get_property</li>
+                        <li class="method">set_property</li>
+                        <li class="method">get_data</li>
+                        <li class="method">set_data</li>
+                        <li class="method">set_data_full</li>
+                        <li class="method">steal_data</li>
+                        <li class="method">get_qdata</li>
+                        <li class="method">set_qdata</li>
+                        <li class="method">set_qdata_full</li>
+                        <li class="method">steal_qdata</li>
+                      </ul>
+                    </div>
+                    <div class="column">
+                      <ul class="navi_inline">
+                        <li class="method">freeze_notify</li>
+                        <li class="method">thaw_notify</li>
+                        <li class="virtual_method">dispose</li>
+                        <li class="virtual_method">constructed</li>
+                        <li class="method">notify_property</li>
+                        <li class="method">connect</li>
+                        <li class="method">disconnect</li>
+                        <li class="method">add_toggle_ref</li>
+                        <li class="method">remove_toggle_ref</li>
+                        <li class="method">bind_property</li>
+                        <li class="signal">notify</li>
+                        <li class="field">ref_count</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br/>
+            <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+            </div>
+          </body>
+        </html>

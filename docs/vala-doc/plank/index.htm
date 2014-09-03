@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>plank &ndash; Vala Binding Reference</title>
+    <link href="devhelpstyle.css" rel="stylesheet" type="text/css"/><script src="scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">plank Reference Manual</div>
+    <div class="site_body">
+      <div class="site_content">
+        <h1 class="main_title" id="plank">plank</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Description:</h2>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Namespaces:</h3>
+        <ul class="navi_inline">
+          <li class="namespace"><a href="Plank.html">Plank</a> - </li>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="class"><a href="Plank.DockController.html">DockController</a> - <span class="brief_description">A controller class for managing
+                a single dock.</span></li>
+            <li class="class"><a href="Plank.DockPreferences.html">DockPreferences</a> - <span class="brief_description">Contains all preferences for 
+                docks.</span></li>
+            <li class="class"><a href="Plank.DockRenderer.html">DockRenderer</a> - <span class="brief_description">Handles all of the drawing for a 
+                dock.</span></li>
+            <li class="class"><a href="Plank.DragManager.html">DragManager</a> - <span class="brief_description">Handles all of the drag'n'drop events
+                for a dock.</span></li>
+            <li class="class"><a href="Plank.HideManager.html">HideManager</a> - <span class="brief_description">Handles checking if a dock should 
+                hide or not.</span></li>
+            <li class="class"><a href="Plank.PositionManager.html">PositionManager</a> - <span class="brief_description">Handles computing any 
+                size/position information for the dock.</span></li>
+          </ul>
+          <h3 class="main_title">Enums:</h3>
+          <ul class="navi_inline">
+            <li class="enum"><a href="Plank.HideType.html">HideType</a> - <span class="brief_description">If/How the dock should hide itself.</span>
+            </li>
+          </ul>
+          <h3 class="main_title">Constants:</h3>
+          <ul class="navi_inline">
+            <li class="constant"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">const</span> <span class="main_keyword">unowned</span> <span class="main_basic_type"><code>string</code></span> <b><a href="Plank.G_RESOURCE_PATH.html" class="constant">G_RESOURCE_PATH</a></b>
+              </span>
+              <div class="leaf_brief_description">
+              </div></li>
+          </ul>
+          <li class="namespace"><a href="Plank.Drawing.html">Drawing</a> - </li>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="abstract_class"><a href="Plank.Drawing.AnimatedRenderer.html">AnimatedRenderer</a> - <span class="brief_description">Handles 
+                animated rendering. Uses a timer and continues requesting redraws for a widget until no more animation is needed.</span></li>
+            <li class="class"><a href="Plank.Drawing.DrawingService.html">DrawingService</a> - <span class="brief_description">Utility service for 
+                loading icons and working with pixbufs.</span></li>
+            <li class="class"><a href="Plank.Drawing.DockSurface.html">DockSurface</a> - <span class="brief_description">A dock surface is a wrapper 
+                class for a <code>Cairo.Surface</code>. It encapsulates a surface/context and provides utility methods.</span></li>
+            <li class="class"><a href="Plank.Drawing.DockTheme.html">DockTheme</a> - <span class="brief_description">A themed renderer for dock 
+                windows.</span></li>
+            <li class="abstract_class"><a href="Plank.Drawing.Theme.html">Theme</a> - <span class="brief_description">A themed renderer for windows.
+              </span></li>
+          </ul>
+          <h3 class="main_title">Structs:</h3>
+          <ul class="navi_inline">
+            <li class="struct"><a href="Plank.Drawing.Color.html">Color</a> - <span class="brief_description">Represents a RGBA color and has methods 
+                for manipulating the color.</span></li>
+          </ul>
+          <li class="namespace"><a href="Plank.Factories.html">Factories</a> - </li>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="abstract_class"><a href="Plank.Factories.AbstractMain.html">AbstractMain</a> - <span class="brief_description">The main class 
+                for all dock applications. All docks should extend this class. In the constructor, the string fields should be initialized to 
+                customize the dock.</span></li>
+            <li class="class"><a href="Plank.Factories.Factory.html">Factory</a> - <span class="brief_description">The main factory class for the 
+                dock.</span></li>
+            <li class="class"><a href="Plank.Factories.ItemFactory.html">ItemFactory</a> - <span class="brief_description">An item factory. Creates 
+                <a href="Plank.Items.DockItem.html" class="class">Items.DockItem</a>s based on .dockitem files.</span></li>
+          </ul>
+          <li class="namespace"><a href="Plank.Items.html">Items</a> - </li>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="class"><a href="Plank.Items.ApplicationDockItem.html">ApplicationDockItem</a> - <span class="brief_description">A dock item for
+                applications (with .desktop launchers).</span></li>
+            <li class="class"><a href="Plank.Items.ApplicationDockItemProvider.html">ApplicationDockItemProvider</a> - 
+              <span class="brief_description">A container and controller class for managing application dock items on a dock.</span></li>
+            <li class="class"><a href="Plank.Items.DefaultApplicationDockItemProvider.html">DefaultApplicationDockItemProvider</a> - 
+              <span class="brief_description">The default container and controller class for managing application dock items on a dock.</span></li>
+            <li class="abstract_class"><a href="Plank.Items.DockElement.html">DockElement</a> - <span class="brief_description">The base class for all
+                dock elements.</span></li>
+            <li class="class"><a href="Plank.Items.DockItem.html">DockItem</a> - <span class="brief_description">The base class for all dock items.
+              </span></li>
+            <li class="class"><a href="Plank.Items.DockItemProvider.html">DockItemProvider</a> - <span class="brief_description">A container and 
+                controller class for managing dock items on a dock.</span></li>
+            <li class="class"><a href="Plank.Items.DockItemPreferences.html">DockItemPreferences</a> - <span class="brief_description">Contains 
+                preference keys for a dock item.</span></li>
+            <li class="class"><a href="Plank.Items.FileDockItem.html">FileDockItem</a> - <span class="brief_description">A dock item for files or 
+                folders on the dock.</span></li>
+            <li class="class"><a href="Plank.Items.PlaceholderDockItem.html">PlaceholderDockItem</a> - <span class="brief_description">A dock item as 
+                a placeholder for the dock itself if nothing was added yet.</span></li>
+            <li class="class"><a href="Plank.Items.PlankDockItem.html">PlankDockItem</a> - <span class="brief_description">A dock item for the dock 
+                itself. Has things like about, help, quit etc.</span></li>
+            <li class="class"><a href="Plank.Items.TransientDockItem.html">TransientDockItem</a> - <span class="brief_description">A dock item for 
+                applications which aren't pinned or doesn't have a matched desktop-files.</span></li>
+          </ul>
+          <h3 class="main_title">Enums:</h3>
+          <ul class="navi_inline">
+            <li class="enum"><a href="Plank.Items.Animation.html">Animation</a> - <span class="brief_description">What type of animation to perform 
+                when an item is or was interacted with.</span></li>
+            <li class="enum"><a href="Plank.Items.PopupButton.html">PopupButton</a> - <span class="brief_description">What mouse button pops up the 
+                context menu on an item. Can be multiple buttons.</span></li>
+            <li class="enum"><a href="Plank.Items.IndicatorState.html">IndicatorState</a> - <span class="brief_description">What item indicator to 
+                show.</span></li>
+            <li class="enum"><a href="Plank.Items.ItemState.html">ItemState</a> - <span class="brief_description">The current activity state of an 
+                item. The item has several states to track and can be in any combination of them.</span></li>
+          </ul>
+          <h3 class="main_title">Delegates:</h3>
+          <ul class="navi_inline">
+            <li class="delegate"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">delegate</span> <span class="main_type"><a href="Plank.Drawing.DockSurface.html" class="class">DockSurface</a></span> <b><a href="Plank.Items.DrawItemFunc.html" class="delegate">DrawItemFunc</a></b> (<span class="main_type"><a href="Plank.Items.DockItem.html" class="class">DockItem</a></span> item, <span class="main_type"><a href="Plank.Drawing.DockSurface.html" class="class">DockSurface</a></span> source, <span class="main_type"><a href="Plank.Drawing.DockSurface.html" class="class">DockSurface</a></span>? target)
+              </span>
+              <div class="leaf_brief_description"><span class="brief_description">Draws a modified surface onto another newly created or given surface
+                </span>
+              </div></li>
+          </ul>
+          <li class="namespace"><a href="Plank.Services.html">Services</a> - </li>
+          <h3 class="main_title">Interfaces:</h3>
+          <ul class="navi_inline">
+            <li class="interface"><a href="Plank.Services.PrefsSerializable.html">PrefsSerializable</a> - <span class="brief_description">This 
+                interface is used by objects that need to be serialized in a Preferences. The object must have a string representation and provide 
+                these methods to translate between the string and object representations.</span></li>
+          </ul>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="class"><a href="Plank.Services.Logger.html">Logger</a> - <span class="brief_description">A logging class to display all console
+                messages in a nice colored format.</span></li>
+            <li class="class"><a href="Plank.Services.Paths.html">Paths</a> - <span class="brief_description">A wrapper class that gives static 
+                instances of <code>GLib.File</code> for commonly used paths. Most paths are retrieved from <code>GLib.Environment</code>, which on 
+                Linux uses the XDG Base Directory specification (see <a href="http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html">
+                  http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html</a>).</span></li>
+            <li class="abstract_class"><a href="Plank.Services.Preferences.html">Preferences</a> - <span class="brief_description">The base class for 
+                all preferences in the system. Preferences are serialized to files. The file is watched for changes and loads new values if the 
+                backing file changed. When any public property of a sub-class is changed, the public properties are serialized to the backing file.
+              </span></li>
+            <li class="class"><a href="Plank.Services.System.html">System</a> - <span class="brief_description">A utility class for launching 
+                applications and opening files/URIs.</span></li>
+          </ul>
+          <h3 class="main_title">Enums:</h3>
+          <ul class="navi_inline">
+            <li class="enum"><a href="Plank.Services.LogLevel.html">LogLevel</a> - <span class="brief_description">Controls what messages show in the 
+                console log.</span></li>
+          </ul>
+          <li class="namespace"><a href="Plank.Widgets.html">Widgets</a> - </li>
+          <h3 class="main_title">Classes:</h3>
+          <ul class="navi_inline">
+            <li class="class"><a href="Plank.Widgets.CompositedWindow.html">CompositedWindow</a> - <span class="brief_description">A <code>Gtk.Window
+                </code> with compositing support enabled. The default expose event will draw a completely transparent window.</span></li>
+            <li class="class"><a href="Plank.Widgets.DockWindow.html">DockWindow</a> - <span class="brief_description">The main window for all docks.
+              </span></li>
+            <li class="class"><a href="Plank.Widgets.HoverWindow.html">HoverWindow</a> - <span class="brief_description">A hover window that shows 
+                labels for dock items. This window floats outside (but near) the dock.</span></li>
+            <li class="class"><a href="Plank.Widgets.PoofWindow.html">PoofWindow</a> - <span class="brief_description">An animated window that draws a
+                'poof' animation. Used when dragging items off the dock.</span></li>
+            <li class="class"><a href="Plank.Widgets.TitledSeparatorMenuItem.html">TitledSeparatorMenuItem</a> - <span class="brief_description">A 
+                <code>Gtk.SeparatorMenuItem</code> with a title on it. The separator can be drawn with or without a line.</span></li>
+          </ul>
+        </ul>
+      </div>
+    </div><br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

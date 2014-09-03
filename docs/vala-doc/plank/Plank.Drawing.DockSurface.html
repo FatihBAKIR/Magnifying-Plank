@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Plank.Drawing.DockSurface &ndash; plank &ndash; Vala Binding Reference</title>
+    <link href="devhelpstyle.css" rel="stylesheet" type="text/css"/><script src="scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Plank.Drawing.DockSurface &ndash; plank Reference Manual</div>
+    <div class="site_body">
+      <div class="site_content">
+        <h1 class="main_title">DockSurface</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        <img class="main_diagram" usemap="#Plank.Drawing.DockSurface" alt="Object hierarchy for DockSurface" src="img/Plank.Drawing.DockSurface.png"/>
+      
+
+      <map id="Plank.Drawing.DockSurface" name="Plank.Drawing.DockSurface">
+<area shape="rect" id="node1" href="Plank.Drawing.DockSurface.html" title="Plank.Drawing.DockSurface" alt="" coords="5,101,235,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">class</span> <b><span css="class">DockSurface</span></b> : <span class="main_type"><code>Object</code></span>
+        </div>
+        <div class="description">
+          <p>A dock surface is a wrapper class for a <code>Cairo.Surface</code>. It encapsulates a surface/context and provides utility methods.</p>
+        </div><br/>
+        <div class="namespace_note"><b>Namespace:</b> <a href="Plank.Drawing.html">Plank.Drawing</a>
+        </div>
+        <div class="package_note"><b>Package:</b> <a href="index.htm">plank</a>
+        </div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Properties:</h3>
+        <ul class="navi_inline">
+          <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Surface</code></span> <b><a href="Plank.Drawing.DockSurface.Internal.html" class="property">Internal</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">The internal <code>Cairo.Surface</code> backing the dock surface.
+              </span>
+            </div></li>
+          <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Plank.Drawing.DockSurface.Width.html" class="property">Width</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">The width of the surface.</span>
+            </div></li>
+          <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Plank.Drawing.DockSurface.Height.html" class="property">Height</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">The height of the surface.</span>
+            </div></li>
+          <li class="property"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Context</code></span> <b><a href="Plank.Drawing.DockSurface.Context.html" class="property">Context</a></b> { <span class="main_keyword">construct</span>; <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">A <code>Cairo.Context</code> for the dock surface.</span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Creation methods:</h3>
+        <ul class="navi_inline">
+          <li class="creation_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Plank.Drawing.DockSurface.DockSurface.html" class="creation_method">DockSurface</a></b> (<span class="main_basic_type"><code>int</code></span> width, <span class="main_basic_type"><code>int</code></span> height)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Creates a new dock surface.</span>
+            </div></li>
+          <li class="creation_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Plank.Drawing.DockSurface.DockSurface.with_surface.html" class="creation_method">DockSurface.with_surface</a></b> (<span class="main_basic_type"><code>int</code></span> width, <span class="main_basic_type"><code>int</code></span> height, <span class="main_type"><code>Surface</code></span> model)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Creates a new dock surface compatible with an existing <code>
+                  Cairo.Surface</code>.</span>
+            </div></li>
+          <li class="creation_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Plank.Drawing.DockSurface.DockSurface.with_dock_surface.html" class="creation_method">DockSurface.with_dock_surface</a></b> (<span class="main_basic_type"><code>int</code></span> width, <span class="main_basic_type"><code>int</code></span> height, <span class="main_type"><span css="class">DockSurface</span></span> model)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Creates a new dock surface compatible with an existing 
+                <span css="class">Drawing.DockSurface</span>.</span>
+            </div></li>
+          <li class="creation_method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Plank.Drawing.DockSurface.DockSurface.with_internal.html" class="creation_method">DockSurface.with_internal</a></b> (<span class="main_type"><code>ImageSurface</code></span> image)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Creates a new dock surface with the given <code>Cairo.ImageSurface
+                </code> as Internal.</span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Methods:</h3>
+        <ul class="navi_inline">
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Plank.Drawing.DockSurface.clear.html" class="method">clear</a></b> ()
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Clears the entire surface.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><span css="class">DockSurface</span></span> <b><a href="Plank.Drawing.DockSurface.copy.html" class="method">copy</a></b> ()
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Create a copy of the surface</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Pixbuf</code></span> <b><a href="Plank.Drawing.DockSurface.to_pixbuf.html" class="method">to_pixbuf</a></b> ()
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Saves the current dock surface to a <code>Gdk.Pixbuf</code>.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><span css="class">DockSurface</span></span> <b><a href="Plank.Drawing.DockSurface.create_mask.html" class="method">create_mask</a></b> (<span class="main_basic_type"><code>double</code></span> threshold, <span class="main_keyword">out</span> <span class="main_type"><code>Rectangle</code></span> extent)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Computes the mask of the surface.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><a href="Plank.Drawing.Color.html" class="struct">Color</a></span> <b><a href="Plank.Drawing.DockSurface.average_color.html" class="method">average_color</a></b> ()
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Computes and returns the average color of the surface.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Plank.Drawing.DockSurface.fast_blur.html" class="method">fast_blur</a></b> (<span class="main_basic_type"><code>int</code></span> radius, <span class="main_basic_type"><code>int</code></span> process_count = <span class="main_optional_parameter">1</span>)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Performs a fast blur on the surface.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Plank.Drawing.DockSurface.exponential_blur.html" class="method">exponential_blur</a></b> (<span class="main_basic_type"><code>int</code></span> radius)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Performs an exponential blur on the surface.</span>
+            </div></li>
+          <li class="method"><span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Plank.Drawing.DockSurface.gaussian_blur.html" class="method">gaussian_blur</a></b> (<span class="main_basic_type"><code>int</code></span> radius)
+            </span>
+            <div class="leaf_brief_description"><span class="brief_description">Performs a gaussian blur on the surface. <b>Note: This method is 
+                  wickedly slow</b></span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Inherited Members:</h3>
+        <div class="box">
+          <div class="headline">
+            <div class="text">All known members inherited from class GLib.Object</div>
+            <div class="toggle">
+              <img onclick="toggle_box  (this, 'box-content-17')" src="coll_open.png">&nbsp;</div>
+            </div>
+            <div class="content" id="box-content-17">
+              <div class="column">
+                <ul class="navi_inline">
+                  <li class="static_method">@new</li>
+                  <li class="static_method">newv</li>
+                  <li class="static_method">new_valist</li>
+                  <li class="method">get_type</li>
+                  <li class="method">get_class</li>
+                  <li class="method">@ref</li>
+                  <li class="method">unref</li>
+                  <li class="method">ref_sink</li>
+                  <li class="method">weak_ref</li>
+                  <li class="method">weak_unref</li>
+                  <li class="method">add_weak_pointer</li>
+                  <li class="method">remove_weak_pointer</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="navi_inline">
+                  <li class="method">@get</li>
+                  <li class="method">@set</li>
+                  <li class="method">get_property</li>
+                  <li class="method">set_property</li>
+                  <li class="method">get_data</li>
+                  <li class="method">set_data</li>
+                  <li class="method">set_data_full</li>
+                  <li class="method">steal_data</li>
+                  <li class="method">get_qdata</li>
+                  <li class="method">set_qdata</li>
+                  <li class="method">set_qdata_full</li>
+                  <li class="method">steal_qdata</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="navi_inline">
+                  <li class="method">freeze_notify</li>
+                  <li class="method">thaw_notify</li>
+                  <li class="virtual_method">dispose</li>
+                  <li class="virtual_method">constructed</li>
+                  <li class="method">notify_property</li>
+                  <li class="method">connect</li>
+                  <li class="method">disconnect</li>
+                  <li class="method">add_toggle_ref</li>
+                  <li class="method">remove_toggle_ref</li>
+                  <li class="method">bind_property</li>
+                  <li class="signal">notify</li>
+                  <li class="field">ref_count</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br/>
+      <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+      </div>
+    </body>
+  </html>
